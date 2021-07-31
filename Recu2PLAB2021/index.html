@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recuperatorio</title>
+    <link rel="stylesheet" href="./estilos/style.css" />
+    <script src="./js/Main.js"></script>
+    <script src="./js/Persona.js"></script>
+    <script src="./js/Cliente.js"></script>
+  </head>
+  <body>
+    <div class="input-persona">
+      <h1>ABM Personas</h1>
+      <hr />
+      <label for="txtId">Id</label>
+      <br />
+      <input type="text" name="txtId" id="txtId" disabled />
+      <br />
+      <label for="txtNombre"
+        >Nombre
+        <br />
+        <input type="text" name="txtNombre" id="txtNombre" />
+      </label>
+      <br />
+      <label for="txtApellido"
+        >Apellido
+        <br />
+        <input type="text" name="txtApellido" id="txtApellido" />
+      </label>
+      <br />
+      <label for="txtEdad"
+        >Edad
+        <br />
+        <input type="number" name="txtEdad" id="txtEdad" />
+      </label>
+      <br />
+      <label for="txtSexo"
+        >Sexo
+        <select name="txtSexo" id="txtSexo">
+          <option value="masculino">masculino</option>
+          <option value="femenino">femenino</option>
+        </select>
+      </label>
+      <input type="button" value="Eliminar" id="btnEliminar" class="btn" />
+      <input type="button" value="Agregar" id="btnAgregar" class="btn" />
+    </div>
+    <hr />
+    <div>
+      <h2>Filtros</h2>
+      <label for="txtFiltra">
+        <select name="txtFiltra" id="txtFiltra">
+          <option value="masculino">masculino</option>
+          <option value="femenino">femenino</option>
+          <option value="todos">todos</option>
+        </select>
+      </label>
+      <label for="txtPromedio"
+        >Promedio de edad:
+        <textarea
+          name="txtPromedio"
+          id="txtAreaPromedio"
+          cols="15"
+          rows="1"
+        ></textarea>
+      </label>
+      <input
+        type="button"
+        value="Calcular Promedio"
+        id="btnPromediar"
+        class="btn"
+      />
+    </div>
+    <input type="radio" id="id" name="columna" value="id" checked />
+    <label for="id">Id</label>
+    <input type="radio" id="nombre" name="columna" value="nombre" checked />
+    <label for="nombre">Nombre</label>
+
+    <table id="tablaPersonas">
+      <tr></tr>
+    </table>
+  </body>
+</html>
